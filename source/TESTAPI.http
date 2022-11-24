@@ -1,0 +1,43 @@
+###
+GET http://localhost/api_melcosh/User/login/tes@gmail.com/123
+
+###
+GET http://localhost/api_melcosh/User/getUser/tes@gmail.com
+
+###
+POST http://localhost/api_melcosh/User/insertUser
+content-type: application/json
+
+{
+    "email"   : "testhalo@gmail.com",
+    "name"    : "Tes Halo",
+    "dob"     : "1990-01-01",
+    "phone"   : "08123456789",
+    "password": "123"
+}
+
+###
+POST http://localhost/api_melcosh/User/updateUser
+content-type: application/json
+
+{
+    "email"   : "tes@gmail.com",
+    "name"    : "Tes Halo",
+    "dob"     : "1990-01-01",
+    "phone"   : "08123456789111"
+}
+
+###
+GET http://localhost/api_melcosh/Cafe/getAll
+
+###
+GET http://localhost/api_melcosh/Cafe/getCategory/1
+
+###
+GET http://localhost/api_melcosh/Cafe/getItem/1/Ice Drink
+
+###
+GET http://localhost/api_melcosh/History/getHistory/tes@gmail.com
+
+###
+GET http://localhost/api_melcosh/History/getHistoryDetail/3
